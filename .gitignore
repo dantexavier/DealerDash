@@ -2,11 +2,3 @@
 echo node_modules/ > .gitignore
 echo .env >> .gitignore
 echo */node_modules/ >> .gitignore
-
-# Mac/Linux
-cat > .gitignore << EOL
-node_modules/
-.env
-*/node_modules/
-.DS_Store
-EOL
