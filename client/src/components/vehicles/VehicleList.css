@@ -1,0 +1,58 @@
+/* Animation for table rows */
+.fade-enter {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  
+  .fade-enter-active {
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 300ms, transform 300ms;
+  }
+  
+  .fade-exit {
+    opacity: 1;
+  }
+  
+  .fade-exit-active {
+    opacity: 0;
+    transition: opacity 150ms;
+  }
+  
+  /* Hover effect for table rows */
+  .table tbody tr {
+    transition: all 0.2s ease;
+  }
+  
+  .table tbody tr:hover {
+    background-color: rgba(26, 115, 232, 0.05);
+    transform: translateY(-2px);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  }
+  
+  /* Animated filter section */
+  .filters {
+    transition: all 0.3s ease;
+  }
+  
+  .filters:focus-within {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transform: translateY(-2px);
+  }
+  
+  /* Pulse animation for action buttons */
+  .btn-primary:hover {
+    animation: pulse 1s infinite;
+  }
+  
+  @keyframes pulse {
+    0% {
+      box-shadow: 0 0 0 0 rgba(26, 115, 232, 0.4);
+    }
+    70% {
+      box-shadow: 0 0 0 10px rgba(26, 115, 232, 0);
+    }
+    100% {
+      box-shadow: 0 0 0 0 rgba(26, 115, 232, 0);
+    }
+  }
