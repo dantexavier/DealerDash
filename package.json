@@ -1,12 +1,13 @@
 {
   "name": "dealership-system",
   "version": "1.0.0",
-  "main": "index.js",
+  "description": "Dealership management system",
+  "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node server.js",
+    "build": "cd client && npm install && npm run build",
+    "dev": "nodemon server.js"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "description": ""
+  "dependencies": {
+  }
 }
