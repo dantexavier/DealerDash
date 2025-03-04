@@ -8,6 +8,24 @@ const fs = require('fs');
 // Load environment variables
 dotenv.config();
 
+const fs = require('fs');
+const path = require('path');
+
+// Debug file system
+console.log('Current directory:', process.cwd());
+
+// List files in current directory
+console.log('Files in current directory:', fs.readdirSync('.'));
+
+// Check if models directory exists
+const modelsPath = path.join(__dirname, 'models');
+console.log('Models path:', modelsPath);
+console.log('Models directory exists:', fs.existsSync(modelsPath));
+
+if (fs.existsSync(modelsPath)) {
+  console.log('Files in models directory:', fs.readdirSync(modelsPath));
+}
+
 // Debug directory structure
 console.log('Current directory:', process.cwd());
 console.log('Directory contents:', fs.readdirSync('.'));
