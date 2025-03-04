@@ -1,4 +1,4 @@
-# Windows
-echo node_modules/ > .gitignore
-echo .env >> .gitignore
-echo */node_modules/ >> .gitignore
+node_modules/
+server/node_modules/
+.env
+server/.env
