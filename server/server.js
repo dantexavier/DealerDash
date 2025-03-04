@@ -8,9 +8,6 @@ const fs = require('fs');
 // Load environment variables
 dotenv.config();
 
-const fs = require('fs');
-const path = require('path');
-
 // Debug file system
 console.log('Current directory:', process.cwd());
 
